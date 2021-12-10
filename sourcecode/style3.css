@@ -1,0 +1,26 @@
+.icon-bar {
+    width: 50px;
+    background-color: #555;
+    margin:center;
+    border-radius: 1.5cm;
+  }
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  .icon-bar a:hover {
+    background-color: #000; 
+    border-bottom-left-radius: 1.5cm;
+    border-bottom-right-radius: 1.5cm;
+  }
+  .active {
+    background-color: #00f7ffc9;
+    border-top-left-radius: 1.5cm;
+    border-top-right-radius: 1.5cm;
+  }
+  
+  
