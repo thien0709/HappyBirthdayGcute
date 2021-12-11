@@ -1,8 +1,29 @@
-.icon-bar {
+/*PC*/
+@media (min-width: 46.1875em) {
+@font-face {
+  font-family: "UTM Yves KT_Bold_Italic";
+   src: url("../font/UTM\ Zirkon.ttf") ;
+}
+@font-face {
+  font-family: "UTM Azuki";
+   src: url("../font/UTM\ Silk\ Script.ttf") ;
+}
+@font-face {
+  font-family: "UTM Swashes";
+  src: url("../font/UTM\ Beautiful\ Caps.ttf") ;
+}
+body {
+  height: 100vh;
+
+  width: 100%;
+
+  background:rgb(211, 211, 211);
+  }
+  .icon-bar {
     width: 50px;
     background-color: #555;
     margin:center;
-    border-radius: 1.5cm;
+    border-radius: 0.2cm;
   }
   .icon-bar a {
     display: block;
@@ -14,13 +35,231 @@
   }
   .icon-bar a:hover {
     background-color: #000; 
-    border-bottom-left-radius: 1.5cm;
-    border-bottom-right-radius: 1.5cm;
+    border-radius: 0.2cm;
   }
-  .active {
-    background-color: #00f7ffc9;
-    border-top-left-radius: 1.5cm;
-    border-top-right-radius: 1.5cm;
+  li{
+    color: rgb(49, 49, 49);
+    text-align: center;
+    list-style: none;
+    font-size: 50px;
+    font-family: "UTM Yves KT_Bold_Italic";
   }
+  .ht{
+    margin-left: 670px;
+    }
+  .hu{
+    margin-left: 640px;
+  }
+  .hi{
+    margin-left: 665px;
+  }
+  .ha{
+    margin-left: 650px;
+  }
+  /*Snow*/
+  @-webkit-keyframes snowflakes-fall {
+    0% {top:-10%}
+    100% {top:100%}
+  }
+  @-webkit-keyframes snowflakes-shake {
+    0%,100% {-webkit-transform:translateX(0);transform:translateX(0)}
+    50% {-webkit-transform:translateX(80px);transform:translateX(80px)}
+  }
+  @keyframes snowflakes-fall {
+    0% {top:-10%}
+    100% {top:100%}
+  }
+  @keyframes snowflakes-shake {
+    0%,100%{ transform:translateX(0)}
+    50% {transform:translateX(80px)}
+  }
+  .snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 5px #000;
+    position:fixed;
+    top:-10%;
+    z-index:9999;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:default;
+    -webkit-animation-name:snowflakes-fall,snowflakes-shake;
+    -webkit-animation-duration:10s,3s;
+    -webkit-animation-timing-function:linear,ease-in-out;
+    -webkit-animation-iteration-count:infinite,infinite;
+    -webkit-animation-play-state:running,running;
+    animation-name:snowflakes-fall,snowflakes-shake;
+    animation-duration:10s,3s;
+    animation-timing-function:linear,ease-in-out;
+    animation-iteration-count:infinite,infinite;
+    animation-play-state:running,running;
+  }
+  .snowflake:nth-of-type(0){
+    left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s
+  }
+  .snowflake:nth-of-type(1){
+    left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s
+  }
+  .snowflake:nth-of-type(2){
+    left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s
+  }
+  .snowflake:nth-of-type(3){
+    left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s
+  }
+  .snowflake:nth-of-type(4){
+    left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s
+  }
+  .snowflake:nth-of-type(5){
+    left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s
+  }
+  .snowflake:nth-of-type(6){
+    left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s
+  }
+  .snowflake:nth-of-type(7){
+    left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s
+  }
+  .snowflake:nth-of-type(8){
+    left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s
+  }
+  .snowflake:nth-of-type(9){
+    left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s
+  }
+  .snowflake:nth-of-type(10){
+    left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s
+  }
+  .snowflake:nth-of-type(11){
+    left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s
+  }
+}
+/*Mobile*/
+@media (max-width: 64em) {
+  @font-face {
+    font-family: "UTM Yves KT_Bold_Italic";
+     src: url("../font/UTM\ Zirkon.ttf") ;
+  }
+  @font-face {
+    font-family: "UTM Azuki";
+     src: url("../font/UTM\ Silk\ Script.ttf") ;
+  }
+  @font-face {
+    font-family: "UTM Swashes";
+    src: url("../font/UTM\ Beautiful\ Caps.ttf") ;
+  }
+  body {
+    height: 100vh;
   
+    width: 100%;
   
+    background:rgb(180, 180, 180);
+    }
+  .icon-bar {
+      width: 50px;
+      background-color: #555;
+      margin:center;
+      border-radius: 0.2cm;
+    }
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+    .icon-bar a:hover {
+      background-color: #000; 
+      border-radius: 0.2cm;
+    }
+    .ht{
+      margin-left: 180px;
+      }
+    .hu{
+      margin-left: 150px;
+    }
+    .hi{
+      margin-left: 175px;
+    }
+    .ha{
+      margin-left: 160px;
+    }
+    }
+    /*Snow*/
+  @-webkit-keyframes snowflakes-fall {
+    0% {top:-10%}
+    100% {top:100%}
+  }
+  @-webkit-keyframes snowflakes-shake {
+    0%,100% {-webkit-transform:translateX(0);transform:translateX(0)}
+    50% {-webkit-transform:translateX(80px);transform:translateX(80px)}
+  }
+  @keyframes snowflakes-fall {
+    0% {top:-10%}
+    100% {top:100%}
+  }
+  @keyframes snowflakes-shake {
+    0%,100%{ transform:translateX(0)}
+    50% {transform:translateX(80px)}
+  }
+  .snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 5px #000;
+    position:fixed;
+    top:-10%;
+    z-index:9999;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:default;
+    -webkit-animation-name:snowflakes-fall,snowflakes-shake;
+    -webkit-animation-duration:10s,3s;
+    -webkit-animation-timing-function:linear,ease-in-out;
+    -webkit-animation-iteration-count:infinite,infinite;
+    -webkit-animation-play-state:running,running;
+    animation-name:snowflakes-fall,snowflakes-shake;
+    animation-duration:10s,3s;
+    animation-timing-function:linear,ease-in-out;
+    animation-iteration-count:infinite,infinite;
+    animation-play-state:running,running;
+  }
+  .snowflake:nth-of-type(0){
+    left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s
+  }
+  .snowflake:nth-of-type(1){
+    left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s
+  }
+  .snowflake:nth-of-type(2){
+    left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s
+  }
+  .snowflake:nth-of-type(3){
+    left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s
+  }
+  .snowflake:nth-of-type(4){
+    left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s
+  }
+  .snowflake:nth-of-type(5){
+    left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s
+  }
+  .snowflake:nth-of-type(6){
+    left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s
+  }
+  .snowflake:nth-of-type(7){
+    left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s
+  }
+  .snowflake:nth-of-type(8){
+    left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s
+  }
+  .snowflake:nth-of-type(9){
+    left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s
+  }
+  .snowflake:nth-of-type(10){
+    left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s
+  }
+  .snowflake:nth-of-type(11){
+    left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s
+  }
