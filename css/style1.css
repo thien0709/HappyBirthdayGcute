@@ -1,15 +1,15 @@
   /* PC */
 @font-face {
     font-family: "UTM Yves KT_Bold_Italic";
-     src: url("./font/UTM\ Zirkon.ttf") ;
+     src: url("../font/UTM\ Silk\ Script.ttf") ;
   }
   @font-face {
     font-family: "UTM Azuki";
-     src: url("./font/UTM\ EdwardianKT.ttf") ;
+     src: url("../font/UTM\ EdwardianKT.ttf") ;
   }
   @font-face {
     font-family: "UTM Swashes";
-    src: url("./font/UTM\ Beautiful\ Caps.ttf") ;
+    src: url("../font/UTM\ Beautiful\ Caps.ttf") ;
   }
   *{
     padding:0;
@@ -86,15 +86,15 @@
   and (max-device-width : 568px) {
     @font-face {
         font-family: "UTM Yves KT_Bold_Italic";
-         src: url("./font/UTM Yves KT_Bold_Italic.ttf") ;
+         src: url("../font/UTM Yves KT_Bold_Italic.ttf") ;
       }
       @font-face {
         font-family: "UTM Azuki";
-         src: url("./font/UTM\ IsadoraBold.ttf") ;
+         src: url("../font/UTM\ IsadoraBold.ttf") ;
       }
       @font-face {
         font-family: "UTM Swashes";
-        src: url("./font/UTM\ Beautiful\ Caps.ttf") ;
+        src: url("../font/UTM\ Beautiful\ Caps.ttf") ;
       }
       *{
         padding:0;
